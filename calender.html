@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Materialize Calendar</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card calendar-container">
+            <div class="card-content">
+                <div class="calendar-header cyan lighten-2">
+                    <button id="prevYear" class="btn-floating btn-small red"><i class="material-icons">arrow_back</i></button>
+                    <button id="prevMonth" class="btn-floating btn-small red"><i class="material-icons">keyboard_arrow_left</i></button>
+                    <h2 id="currentMonthYear"></h2>
+                    <button id="nextMonth" class="btn-floating btn-small red"><i class="material-icons">keyboard_arrow_right</i></button>
+                    <button id="nextYear" class="btn-floating btn-small red"><i class="material-icons">arrow_forward</i></button>
+                </div>
+                <table class="striped calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--callender functionality-->
+    <script src="assets/script.js"></script>
+</body>
+</html>
